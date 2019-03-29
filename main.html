@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me</title>
+    <h1><b>Do you you love me?</b></h1>
+</head>
+<body>
+<input type="button" onclick="yes()" value="YES">
+<button type="button" onmouseover="no()" id="no1" style="position:absolute">NO</button>
+<script>
+    function yes() { // button input khác gì button thông thường???
+        alert('Chuẩn rồi babe');
+    }
+    function no() {
+        document.getElementById("no1").style.left = Math.floor(Math.random()*window.innerWidth)+'px';
+        document.getElementById("no1").style.top = Math.floor(Math.random()*window.innerHeight)+'px';
+    }
+</script>
+</body>
+</html>
